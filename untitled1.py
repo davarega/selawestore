@@ -1,9 +1,8 @@
+#=============== FIS ==============
 import numpy as np
 import skfuzzy as fuzz
 from skfuzzy import control as ctrl
 import matplotlib.pyplot as plt
-
-#=============== FIS ==============
 
 Jwb_benar = ctrl.Antecedent(np.arange(0, 11, 1), 'Jwb_benar')
 usaha = ctrl.Antecedent(np.arange(0, 11, 1), 'usaha')
