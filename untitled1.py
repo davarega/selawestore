@@ -2,8 +2,6 @@ import numpy as np
 import skfuzzy as fuzz
 from skfuzzy import control as ctrl
 import matplotlib.pyplot as plt
-from sklearn.neural_network import MLPRegressor
-from sklearn.metrics import mean_squared_error
 
 #=============== FIS ==============
 
@@ -74,6 +72,9 @@ ax.set_title('Surface Plot Sistem Grading Fuzzy')
 plt.show()
 
 #=============== ANN ==============
+import numpy as np
+from sklearn.neural_network import MLPRegressor
+from sklearn.metrics import mean_squared_error
 
 X = np.linspace(0, 2 * np.pi, 200).reshape(-1, 1)
 y = np.sin(X).ravel()
